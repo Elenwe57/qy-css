@@ -1,0 +1,1613 @@
+/***************************PA***************************/
+.pa_ligneliens {display: flex;justify-content: space-around;margin-bottom: 20px;}
+.pa_ligneliens div {padding: 10px;background: var(--contrast);border: 1px solid #374465;border-radius: 4px;box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(255, 255, 255, 0.2);text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);transition: all 0.3s ease-in-out;cursor: pointer;font-family: Cinzel;}
+.pa_ligneliens div:hover {background: var(--contrast);box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3), inset 0px 2px 4px rgba(255, 255, 255, 0.3);transform: scale(1.05);    font-family: Cinzel;}
+.pa_lignecolonnes {display: flex;gap: 20px;text-align:justify}
+.pa_lignecolonnes_colonne1 {width: 40%;}
+.navipa {display: flex;justify-content: space-around;font-size: 17px;}
+.pa_lignecolonnes_colonne1_bienvenue {font-family: Cinzel;font-size: 22px;text-align: center;margin: 15px 0;}
+.pa_lignecolonnes_colonne1_contexte {padding: 15px;
+    background: var(--neutralDark);
+    margin-bottom: 0px;
+    text-align: justify;
+    border-radius: 5px;
+    outline: 1px solid var(--neutralDark);
+    outline-offset: 3px;
+    font-family: var(--font);
+    font-size: 11.5px;
+    line-height: 14px;
+    letter-spacing: 0.6px;}
+.pa_lignecolonnes_colonne1_contexte div {display: flex;justify-content: flex-end;padding-top: 5px;}
+.pa_lignecolonnes_colonne1_contexte div a:hover {transform: scale(1.05);    font-family: Cinzel;}
+.pa_lignecolonnes_colonne1_contexte div a {transition: all 0.3s ease-in-out;cursor: pointer;font-family: Cinzel;}
+.pa_lignecolonnes_colonne2, .pa_lignecolonnes_colonne3 {width: 30%;}
+#datePA {font-family: Cinzel;text-align: center;font-size: 14px;margin-bottom: 15px;}
+#meteo {    text-align: center;
+    background: var(--neutralDark);
+    outline: 1px solid var(--neutralDark);
+    outline-offset: 3px;
+    color: var(--textColor);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 100px;
+    border-radius: 11px;
+    margin-bottom: 15px;
+    font-size: 11px;}
+#meteoDescription {font-family: 'Cinzel';font-size: 21px;font-weight: bold;margin-bottom: 0;margin-top: 4px;}
+#temperature { margin-bottom: 0;}
+#temperature span, #saisonRP span {font-style: italic;color: var(--contrast);}
+#saisonRP {margin: 3px;}
+#meteo img {width: 95px;padding-left: 10px;}
+.pa_cadre h2 {font-family: Cinzel;font-style: normal;color: var(--contrast);border: none;text-align: center;margin-bottom: 15px;margin-top: 0;}
+.pa_lignecolonnes_colonne1_predefs {display: flex;gap: 10px;justify-content: space-around;}
+.pa_lignecolonnes_colonne1_predefs_predef {position: relative;display: inline-block;}
+.pa_lignecolonnes_colonne1_predefs_predef img {display: block;width: 50px;cursor: pointer;border-radius: 5px;}
+.pa_lignecolonnes_colonne1_predefs_predef:hover .predefhide {display: block;}
+.pa_lignecolonnes_colonne1_predefs_predef .predefhide {height: 100%;display: none;position: absolute;top: 50%;width: 70px;left: 50%;transform: translate(-50%, -50%);background-color: rgba(0, 0, 0, 0.7);color: #fff;padding:20px 10px 10px 10px;border-radius: 5px;text-align: center;z-index: 10;}
+span.classe, span.predeflvl, span.predefage {font-size: 10px;}
+span.predefname { font-family: 'Cinzel';font-size: 12px;color: var(--contrast)}
+.predefhide a {font-size: 10px;}
+#chrono_f span:after, #annonce_f span:after {content: " — ";}
+#chrono_f span, #annonce_f span {font-family: cinzel;font-weight: bold;color:var(--contrast);}
+.chronologie {height: 240px;padding: 5px;}
+#chrono_f {height: 229px;
+    overflow: auto;
+    padding-right: 11.5px;
+    font-size: 11.5px;
+    font-family: var(--font);
+    letter-spacing: 0.6px;}
+.annonce_full div {
+    display: inline;
+}
+.contenu_paonglet{display:none;width: 235px;font-size: 11px; text-align: center; margin-left: 10px;height: 40px;}
+.paonglets span { margin: 0.5% 2%; text-align: center;}
+#paonglet_base { display: none;}
+.paonglets { width: 260px;}
+.paonglets img {width: 70px;height: 70px;}
+.contenu_paonglets {padding-top: 10px;}
+.ongletpseudo { font-size: 14px; font-family: Cinzel;}
+div#contenu_paonglet_base { text-align: center;}
+span.present { color: green; font-weight: bold;}
+span.absent { color: red; font-weight: bold;}
+#annonce_f {    height: 113px;
+    overflow: auto;
+    padding-right: 10px;
+    line-height: 15px;
+    font-size: 11.5px;
+    letter-spacing: 0.6px;
+    font-family: var(--font);}
+#annonce_f div, #chrono_f div {margin-bottom: 10px;}
+.annonce_full div:not(:last-child)::after {
+    content: " • ";
+    margin-left: 5px;
+}
+.partos {margin-top: 20px;}
+.partos select {color: var(--textColor);}
+.pacadre2_votestitle {font-family: Cinzel;font-style: normal;color: var(--contrast);border: none;text-align: center;font-size: 25px;}
+.pacadre2_votes {display: flex;justify-content: center;gap: 15px;}
+.votetimer {text-align: center;font-size: 11px;font-style: italic;}
+.pacadre2_flex {margin-top: 25px;background:var(--neutralDark);display: flex;align-items: center;border-radius: 11px;margin-bottom: 15px;outline: 1px solid var(--neutralDark);justify-content: space-around;
+    outline-offset: 2px;padding: 10px;gap:20px}
+.pacadre2_total {display: flex;align-items: center;}
+.firstbuttons {display: flex;font-size: 9.8px;gap: 20px;margin-top: 25px;margin-left: 25px;border-radius: 11px;margin-bottom: 15px;outline: 1px solid var(--neutralDark);
+    justify-content: space-around;background: var(--neutralDark);outline-offset: 2px;padding: 14px;height: 45px;opacity: 0.6;font-family: var(--font2);letter-spacing: 0.6px;}
+.buttonscadre2 a:hover {-webkit-transition: .2s;color: var(--color1a);}
+.buttonscadre2 a {font-weight: 100 !important;}
+
+
+.partos option {background-color: var(--color3);font-size: 11px;border: 1px solid var(--color1);}
+
+
+.pa_cadre select {
+    outline: 1px solid var(--neutralDark);
+    justify-content: space-around;
+    background: var(--neutralDark);
+    outline-offset: 2px;
+}
+
+
+/* PAGE D'ACCUEIL --- */
+.introduction {
+    background-color: var(--neutral);
+}
+
+
+/*** ------------------------------- ***/
+/*** CATEGORIES -------------------- ***/
+
+
+.category {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+
+.cate_title {
+    height: 115px;
+    text-align: center;
+    margin: 30px 0 0 0;
+    line-height: 1;
+}
+
+
+.sstitrecate {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.4;
+    margin-top: -33px;
+    font-family: var(--font2);
+    font-variant-caps: small-caps;
+}
+
+
+.chinesecateText {
+    align-items: center;
+    color: var(--contrast);
+    font-size: 32px;
+    font-family: Ma Shan Zheng;
+}
+
+
+.chinesecatecad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+
+.chinesecatecad::before,
+.chinesecatecad::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background: var(--contrast);
+    display: block;
+}
+
+
+.chinesecatecad::before {
+    margin-right: 15px;
+}
+
+
+.chinesecatecad::after {
+    margin-left: 15px;
+}
+
+
+/* Titre d'une catégorie */
+.cate_title h2 {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    margin: 10px 0 20px;
+    font-family: "Fleur de Leah";
+}
+
+
+.forums {
+    background: var(--neutral);
+    padding: 15px;
+    border: var(--border);
+}
+
+
+.forumcontentdesctitle {
+    background: var(--neutralop);
+    padding: 10px;
+}
+
+
+/* Conteneur d'un forum */
+.forum {
+    margin-bottom: 10px;
+    background: var(--neutralDark);
+    padding: 10px;
+    border-radius: 5px;
+    outline: 1px solid var(--neutralDark);
+    outline-offset: 3px;
+}
+
+
+.forum:last-child {
+    margin-bottom: 0;
+}
+
+
+.forum_lastpost.lastpost .auteur strong {
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+
+span.auteur {
+    font-style: italic;
+}
+
+
+/* Titre d'un forum */
+a.forumtitle {
+    font-size: var(--title-size);
+    font-family: "Cinzel";
+}
+
+
+.forum_content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/* Image statut du forum */
+.forum-img {
+    width: 220px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+
+/* Description du forum */
+.forum_desc {
+    flex: 1;
+    height: 78px;
+    overflow: auto;
+    align-self: center;
+    width: 640px;
+    line-height: 14px;
+    font-size: 11.5px;
+    margin-top: 10px;
+    font-family: var(--font);
+    text-align: justify;
+    letter-spacing: 0.7px;
+}
+
+
+/* Conteneur avatar du dernier posteur */
+.forum_avatar {
+    width: 60px;
+    height: 92px;
+    background: var(--neutralop);
+    padding: 5px;
+}
+
+
+.forum_avatar img {
+    background: var(--neutralDark);
+    width: 50px;
+    height: 82px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.cadreentierava {
+    display: flex;
+    gap: 10px;
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.3;
+    align-items: center;
+}
+
+
+/* Dernier message */
+.forum_lastpost {
+    width: 160px;
+    text-align: center;
+}
+
+
+.forum_details {
+    border-top: 1px solid var(--neutralDark);
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Liens des sous-forums */
+#subforum {
+    font-size: 0;
+    /* Permet de retirer la virgule */
+}
+
+
+#subforum a {
+    font-size: var(--little-size);
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+
+.forum_stats {
+    font-weight: 400;
+    float: right;
+    font-size: var(--little-size);
+    background: var(--neutralop);
+    padding: 6px;
+}
+
+
+span.forum_stats b {
+    color: var(--contrast);
+}
+
+
+/****** ------------------------------------------------------------------------------ 
+ ****** ENTETE DU FORUM --------------------------------------------------------------
+ ****** Tous les éléments qui s'affichent en tête de toutes les pages ---------------- ******/
+
+
+/* Notiffi CSS */
+/* Cache la toolbar défaut */
+#fa_toolbar {
+  display: none;
+}
+
+
+/* Bouton de notification */
+#notiffi_button {
+  cursor: pointer;
+  background: var(--contrast);
+  color: var(--neutral);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  top: 38px;
+  left: 10px;
+  font-size: 25px;
+  height: 35px;
+  width: 35px;
+  z-index: 999;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
+
+/* Conteneur du nombre de notification non lues REMPLI */
+.unread_count {
+    position: relative;
+    background: none;
+    padding: 5px;
+    color: var(--contrast);
+    border-radius: 5px;
+    width: 25px;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: -12px;
+    margin-top: 22px;
+    scale: 1;
+    opacity: 1;
+    aspect-ratio: 1;
+    transition: scale ease-out .2s;
+}
+
+
+/* Conteneur du nombre de notification non lues VIDE */
+.unread_count:empty {
+  position: absolute;
+  scale: 0;
+  opacity: 0;
+  transition: all ease-out .2s;
+}
+
+
+/* Menu des notifications FERMÉ */
+#notiffi_panel {
+  --menuSize: 450px;
+  width: var(--menuSize);
+  position: fixed;
+  z-index: 98;
+  top: 35px;
+  height: 470px;
+  right: calc(var(--menuSize) * -1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  background: var(--neutral);
+  border-left: 1px solid var(--neutralDark);
+  padding: 15px;
+  padding-top: 20px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 11px;
+  transition: all ease .7s;
+  border: 1px solid var(--contrast);
+  box-shadow: 0px 0px 11px #0000004a;
+}
+
+
+/* Menu des notifications OUVERT */
+#notiffi_panel.open {
+  left: 71px;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* Conteneur des notifications */
+.all_notifications {
+  width: 100%;
+  overflow: auto;
+  max-height: 100%;
+  background: var(--neutralDark);
+  padding: 10px;
+  border-radius: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+/* Désactive la barre de défilement dans le conteneur */
+.all_notifications::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Conteneur des notifications VIDE */
+.no_notification {
+  text-align: center;
+  font-style: italic;
+}
+
+
+/* Conteneur du footer du menu
+  (voir toutes les notifications, marquer comme lu, tout supprimer) */
+.notiffi_manage {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Conteneur des boutons d'action des notifications */
+.notiffi_actions {
+    display: flex;
+    width: 100%;
+    justify-items: end;
+    justify-content: space-between;
+}
+
+
+/* Bouton d'action */
+.notiffi_actions button {
+  padding: 2px 10px;
+  background: var(--neutralDark);
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+
+.notiffi_actions button:hover {
+  color: var(--accentClr);
+}
+
+
+/* Apparence d'une notification */
+.notification {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: border .2s;
+  animation: notiffiFadeIn 0.3s ease-in-out;
+}
+
+
+/* Notification au survol */
+.notification:hover {
+  border-color: var(--neutralDarker);
+}
+
+
+/* Animation d'apparition des notifications */
+@keyframes notiffiFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Apparence d'une notification NON LUE */
+.notification.unread {
+  background-color: var(--neutral);
+}
+
+
+/* Conteneur des détails de la notification (avatar, icône) */
+.notif_details {
+  position: relative;
+  align-self: start;
+}
+
+
+/* Conteneur de l'avatar */
+.notif_avatar {
+  background: var(--neutral);
+  height: 25px;
+  width: 16px;
+  border-radius: 5px;
+  aspect-ratio: 1;
+}
+
+
+/* Image de l'avatar */
+.notif_avatar img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+
+/* Icône du type de la notification */
+.notif_icon {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  background: var(--neutral);
+  width: 18px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  font-size: 8px;
+}
+
+
+/* Icône lorsque la notification est non lue */
+.notification.unread .notif_icon {
+  color: var(--neutral);
+  background: var(--accentClr);
+}
+
+
+/* Conteneur du texte et de la date de la notification */
+.notif_content {
+  width: 100%;
+}
+
+
+/* Date de la notification */
+.notif_time {
+  font-size: var(--little-size);
+  opacity: .8;
+}
+
+
+/* Bouton de suppression de la notification */
+.notif_close {
+  background: transparent;
+  align-self: start;
+  font-size: 18px;
+  line-height: 0;
+  opacity: 0;
+  border-radius: 100px;
+  aspect-ratio: 1;
+  padding: 2px;
+  transition: all .3s;
+}
+
+
+/* Affiche le bouton de suppression au survol de la notification */
+.notification:hover .notif_close {
+  opacity: 1;
+}
+
+
+/* Alerte d'une notification */
+.notification.alert {
+  position: fixed;
+  width: 400px;
+  align-items: center;
+  z-index: 99;
+  bottom: 10px;
+  right: 10px;
+  background: var(--neutralDarker);
+  transform: translateY(100%);
+  opacity: 0;
+  filter: blur(5px);
+  transition: all .5s ease-in-out;
+}
+
+
+/* Animation d'affichage de l'alerte */
+.notification.alert.up {
+  transform: translateY(0%);
+  opacity: 1;
+  filter: blur(0);
+  transition: all .5s ease-in-out;
+}
+
+
+.alert_close {
+  background: var(--neutral);
+  font-size: 18px;
+  line-height: 0;
+  border-radius: 100px;
+  aspect-ratio: 1;
+  padding: 2px;
+}
+
+
+/*** ------------------------------- ***/
+/*** ELEMENTS ESTHETIQUES ---------- ***/
+
+
+/* Conteneur général qui sert généralement de fond et/ou de contour */
+.container {
+  background: var(--neutralDark);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+/* Barre de séparation */
+.separator {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid var(--neutralDark);
+  clear: both;
+  height: 1px;
+  width: 100%;
+}
+
+
+hr {
+  border: none;
+  border-top: var(--border);
+}
+
+
+/* Titre d'un toggle */
+summary {
+  cursor: pointer;
+}
+
+
+/* Conteneur moins large (les historiques des messages essentiellement) */
+.wrapped {
+  width: 80%;
+  margin: 10px auto;
+  clear: both;
+}
+
+
+/* Image/avatar réduit */
+.mini_img img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+  margin-right: 10px;
+  background: var(--neutralDark);
+}
+
+
+/* Permet d'aligner un élément à droite ou à gauche */
+.right {
+  float: right;
+}
+
+
+.left {
+  float: left;
+}
+
+
+.clear {
+  clear: both;
+}
+
+
+/* Barre de gestion 
+ * Contient des boutons ou des liens spéciaux */
+.links_bar {
+margin: 25px 0;
+    clear: both;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-weight: 100;
+    font-size: 11px;
+}
+
+
+/* Supprime si vide */
+.links_bar:empty {
+  display: none;
+}
+
+
+/* Lien spécial mis en avant */
+.specials_links a,
+a.specials_links {
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+
+/* Suppression des liens vides */
+.specials_links a:empty,
+a.specials_links:empty {
+  display: none;
+}
+
+
+/*** ------------------------------- ***/
+/*** PAGES DE RECHERCHES ----------- ***/
+
+
+/* RECHERCHE DE MESSAGE -----*/
+
+
+/* Conteneur d'un message */
+.post_search {
+  display: grid;
+  grid-template-columns: 200px auto;
+  border-radius: 5px;
+  margin: 10px 0;
+  background: var(--neutral);
+}
+
+
+.post_search > div {
+  padding: 10px;
+}
+
+
+/* Colonne d'information du message */
+.postsearch_infos {
+  border-right: var(--border);
+  font-size: var(--little-size);
+}
+
+
+/* RECHERCHE DE SUJET -----*/
+/* Même CSS que la liste des sujets dans un forum */
+
+
+/*** ------------------------------- ***/
+/*** PAGE DE CONNEXION ------------- ***/
+
+
+/* Centrer les pages de connexion */
+form[name="form_login"] ~ .panel {
+  text-align: center;
+}
+
+
+form[name="form_login"] .content {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+
+/*** ------------------------------- ***/
+/*** ELEMENTS FLOTTANTS ------------ ***/
+
+
+/* Fenêtre popup "recherche" */
+.overview {
+  background: var(--neutral);
+  border-radius: 5px;
+  border: var(--border);
+  padding: 10px;
+  position: fixed !important;
+  top: 50% !important;
+}
+
+
+/* Bouton rechercher */
+.overview button[type="submit"] {
+  width: 26px;
+  height: 26px;
+  margin-left: 5px;
+}
+
+
+.overview div {
+  margin-bottom: 5px;
+}
+
+
+.overview a {
+  float: right;
+}
+
+
+/* Boîte "recherche un utilisateur" */
+#find_username {
+  display: none;
+  position: fixed;
+  left: 50%;
+  width: 450px;
+  margin-left: -225px;
+  top: 50%;
+  margin-top: -125px;
+  background-color: var(--neutral);
+  padding: 10px;
+  border: var(--border);
+  border-radius: 5px;
+}
+
+
+/***************************CARTE***************************/
+.mapchina {text-align: center;width: 980px;height: 822px;background-image: url(https://i.postimg.cc/CLTNpn3C/Carte.png);background-size: 100% 822px;background-repeat: no-repeat;position: relative;place-self: center;}
+.mapcity:before {content: "♦ ";font-size: 15px;}
+.baihe {right: 240px;top: 330px;position: absolute;}
+.tiecheng {right: 340px;top: 400px;position: absolute;}
+.Qinglin {right: 410px;top: 580px;position: absolute;}
+.yanhua {right: 400px;top: 500px;position: absolute;}
+.shuilan {right: 224px;top: 510px;position: absolute;}
+.baiyuan {right: 655px;top: 520px;position: absolute;}
+.desc_baihe {width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: 5px;left: -500px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.baihe:hover .desc_baihe{opacity:1!important;visibility:visible!important;}
+.lingyuan span, .desc_moyuan span, .desc_baihe span, .symbole_desc_tiecheng span, .desc_tiecheng span, .symbole_desc_baihe span, .symbole_desc_Qinglin span, .desc_Qinglin span, .symbole_desc_yanhua span, .desc_yanhua span, .symbole_desc_shuilan span, .desc_shuilan span,.symbole_desc_baiyuan span, .desc_baiyuan span {font-family: Cinzel;font-size: 15px;color: var(--accentClr);;font-weight: bold;}
+.descmap {width: 250px;height: 150px;padding: 10px;position: absolute;font-size: 10px;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;
+  top: 335px;left: 204px;text-align: center;}
+.descmap span {font-family: Cinzel;font-size: 15px;color:var(--accentClr);font-weight: bold;}
+.symbole_baihe img, .symbole_tiecheng img, .symbole_Qinglin img, .symbole_yanhua img, .symbole_shuilan img, .symbole_baiyuan img {width: 80px;}
+.symbole_baihe {right: 180px;top: 260px;position: absolute;}
+.symbole_tiecheng {right: 320px;top: 320px;position: absolute;}
+.symbole_Qinglin {right: 410px;top: 600px;position: absolute;}
+.symbole_yanhua {right: 440px;top: 430px;position: absolute;}
+.symbole_shuilan {right: 250px;top: 460px;position: absolute;}
+.symbole_baiyuan {right: 580px;top: 490px;position: absolute;}
+.symbole_desc_tiecheng{width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: 15px;left: -376px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.symbole_tiecheng:hover .symbole_desc_tiecheng{opacity:1!important;visibility:visible!important;}
+.symbole_desc_Qinglin{width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: -265px;left: -286px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.symbole_Qinglin:hover .symbole_desc_Qinglin{opacity:1!important;visibility:visible!important;}
+.symbole_desc_yanhua{width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: -95px;left: -256px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.symbole_yanhua:hover .symbole_desc_yanhua{opacity:1!important;visibility:visible!important;}
+.symbole_desc_shuilan{width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: -125px;left: -446px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.symbole_shuilan:hover .symbole_desc_shuilan{opacity:1!important;visibility:visible!important;}
+.symbole_desc_baihe{width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: 75px;left: -516px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.symbole_baihe:hover .symbole_desc_baihe{opacity:1!important;visibility:visible!important;}
+.desc_tiecheng {width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: -65px;left: -383px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.tiecheng:hover .desc_tiecheng{opacity:1!important;visibility:visible!important;}
+.desc_Qinglin {width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: -245px;left: -323px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.Qinglin:hover .desc_Qinglin{opacity:1!important;visibility:visible!important;}
+.desc_yanhua{width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: -165px;left: -331px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.yanhua:hover .desc_yanhua{opacity:1!important;visibility:visible!important;}
+.desc_shuilan {width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: -175px;left: -507px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.shuilan:hover .desc_shuilan{opacity:1!important;visibility:visible!important;}
+.desc_baihe {width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: 5px;left: -499px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.baihe:hover .desc_baihe{opacity:1!important;visibility:visible!important;}
+.symbole_desc_baiyuan{width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: -155px;left: -116px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.symbole_baiyuan:hover .symbole_desc_baiyuan{opacity:1!important;visibility:visible!important;}
+.desc_baiyuan {width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: -185px;left: -84px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.baiyuan:hover .desc_baiyuan{opacity:1!important;visibility:visible!important;}
+.lieu img{width:20px}
+.moyuan{right: 440px;top: 380px;position: absolute;}
+.desc_moyuan{width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: -45px;left: -316px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.moyuan:hover .desc_moyuan{opacity:1!important;visibility:visible!important;}
+.lingyuan{right: 690px;top: 270px;position: absolute;}
+.desc_lingyuan{width: 250px;height: 150px;padding: 10px;position: absolute;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;font-size: 10px;
+  top: 65px;left: -66px;text-align: center;opacity: 0;transition: 1s;visibility: hidden;}
+.lingyuan:hover .desc_lingyuan{opacity:1!important;visibility:visible!important;}
+.maptitle {font-family: "Fleur De Leah", cursive;font-size: 60px;position: absolute;top: 70px;left: 190px;color: var(--contrast);}
+.mapcity {font-size: 10px;}
+
+
+/*** ------------------------------- ***/
+/*** EDITION DE PROFIL ------------- ***/
+
+
+/* Onglets dans la modification de profil */
+#tabs ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 10px;
+}
+
+
+/* Onglet */
+#tabs li {
+  padding: 5px 10px;
+  border: 1px solid transparent;
+}
+
+
+/* Onglet sélectionné */
+#tabs li.activetab {
+  background: var(--neutralDark);
+  border: var(--border);
+  border-radius: 5px;
+}
+
+
+/* Onglet au survol */
+#tabs li:hover {
+  background: var(--neutralDark);
+  border-radius: 5px;
+  border: var(--border);
+}
+
+
+/* Suppression de l'onglet "amis et ignorés" */
+div#tabs li:nth-child(5) {
+  display: none;
+}
+
+
+/* Ajustement de la disposition des champs dans la modification du profil */
+.profil_preferences dl,
+.profil_editavatar dl {
+  grid-template-columns: 40% auto;
+}
+
+
+.profil_preferences .italic {
+  font-size: var(--little-size);
+}
+
+
+/* EDITER SIGNATURE --- */
+#parent_editor_simple > #smiley-box {
+  float: left;
+  /* float: right; -- pour smileys à droite */
+}
+
+
+#parent_editor_simple #message-box {
+  margin-left: 240px;
+  /* margin-right: XXXpx -- pour smileys à droite */
+}
+
+
+#parent_editor_simple #message-box > br {
+  display: none;
+}
+
+
+#parent_editor_simple #message-box > #textarea_content {
+  width: 100% !important;
+}
+
+
+.panel.row2.sig {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/***************************EDITION DU PROFIL***************************/
+input[type='text'], input[type='password'], input.inputbox, .inputbox {font-size: 12px;border: none;border-radius: 0px;padding: 10px 15px;min-width: 300px;background-color: var(--neutralDark);color: var(--textColor);}
+.page-title-profile {padding: 15px 30px 10px 30px !important;text-align: center;text-transform: uppercase;color: var(--neutral)!important;background: var(--contrast);margin-left: 0 !important;}
+.panel-profil-edition {background: var(--neutral);padding: 35px;font-size: 13px;}
+.profil-edit-label {font-weight: 600;color:var(--contrast)!important;padding-bottom: 5px;}
+.panel-profil-edition fieldset {display: flex;column-gap: 205px;flex-wrap: wrap;width: 100%;}
+input[type="text"]:hover, .inputbox:hover {border-bottom: none;}
+.input-container {display: flex;flex-direction: column;gap: 5px;width: 38%;}
+.input-container select {color: var(--textColor);width: 300px;background-color: var(--neutralDark);border: none;}
+select#profile_field_4_-12_2, select#profile_field_4_-12_1 {width: 63px;}
+input#profile_field_4_-12_0 {min-width: 66px;margin-left: 0px;}
+.panel-profil-edition fieldset dl {display: flex;grid-gap: 15px;align-items: center;justify-content: flex-start;padding: 5px 20px;}
+.panel-profil-edition fieldset dt{width: 240px;}
+.panel-profil-edition dt label{min-width: 240px;}
+.profiledescriptionedited {font-style: italic;font-size: 10px;text-align: justify;padding-bottom: 12px;padding-top: 5px;max-width: 300px;}
+fieldset dd {margin-left: 0;min-width: 250px;}
+table.table1 tbody td {border-color: #484848;}
+table.table1 tbody tr:hover, table.table1 tbody tr.hover {background-color:var(--neutralDark);}
+#memberlist .mobile-visible {font-size: 10px;}
+
+
+/*** ------------------------------- ***/
+/*** LISTE DES SUJETS -------------- ***/
+
+
+/* Bloc de description du forum */
+.forum-page_desc {
+    margin: 0 0 20px;
+    background: var(--neutral);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: var(--font);
+    font-size: 11px;
+    letter-spacing: .7px;
+    text-align: justify;
+}
+
+
+/* Conteneur sujet dans la liste */
+.topicslist_row {
+  background: var(--neutral);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.topicslist_row:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Image du sujet */
+.topicslist-img {
+  width: 33px;
+  height: 33px;
+  background: var(--neutralDark);
+}
+
+
+.topic-author {font-size: 11px;}
+
+
+.topicslist_infos {flex-grow: 100;}
+
+
+/*titre du sujet*/
+.topictitle {
+  font-size: var(--medium-size);
+  /* permet de raccourir les titres trop long ainsi : "Titre du suj..." */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 430px;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+
+/* icône de type de message ( exemple : -18 ans, sujet résolu, ... ) */
+.topic_msgicon {
+  margin-right: 5px;
+}
+
+
+.topic_msgicon:empty {
+  display: none;
+}
+
+
+.topiclist-infos img {
+  margin-right: 3px;
+}
+
+
+.topicslist-stats {
+  text-align: right;
+  font-size: 11px;
+}
+
+
+.topicslist-avatar-lastpost img {
+  object-fit: cover;
+  object-position: center;
+  width: 30px;
+  height: 48px;
+  background: var(--neutralDark);
+}
+
+
+.topicslist-lastpost {
+  width: 180px;    font-size: 12px;
+    text-align: center;
+}
+
+
+.topicslist-description {
+font-size: 10px;
+  padding-top: 5px;
+  width: 100%;
+}
+
+
+.vousavezposte {position: absolute;margin-top: -15px;margin-left: 27px;}
+
+
+/* ligne qui séparent les annonces et les notes des autres sujets */
+.topic_separator {
+  height: 5px;
+  background: var(--neutral);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+
+#sort-topics {
+  position: relative;
+  display: inline;
+  background: var(--neutralDark);
+  margin: 10px 0;
+}
+
+
+.sort-form {
+  width: max-content;
+  background: var(--neutral);
+  border: 1px solid var(--neutralDarker);
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  display: none;
+}
+
+
+.expanded~.sort-form {
+  display: block;
+}
+
+
+/*******************MESSAGES*******************/
+.ANOcorpsmess { width: 100%; margin: auto; margin-bottom: 15px; border: 1px solid var(--fourth-color); box-shadow: -2px 5px 5px 0px #0000006e;border: 1px solid #c27b7b0f;}
+.ANOcorpsmess_ban {background: url(https://i.postimg.cc/sfJZ2n12/Banni-re-message.png); height: 150px; width: 100%; background-size: cover; border-bottom: 2px solid var(--neutralDark);border-top-left-radius: 8px; border-top-right-radius: 8px;}
+.ANOcorpsmess_int { display: flex;background: #2a242e;}
+.ANOcorpsmess_blocavaong { width: 220px; border-right:2px solid var(--accentClr); text-align: center;background:var(--neutralDark);}
+.ANOcorpsmess_blocavaong_ava { width: 210px; padding: 5px;background:var(--neutralDark);margin: 5px auto 0;}
+.ANOcorpsmess_blocavaong_ava img { height: 320px; width: 200px;}
+.ANOcorpsmess_ban_infos { font-family: 'Mea Culpa'; font-size: 55px; padding: 37px 10px 10px 20px; text-shadow: 1px 1px 2px #151515;}
+.ANOcorpsmess_ban_infos a {font-weight: 500;}
+.ANOcorpsmess_ban_ssinfos {line-height: 2;font-weight: 700; color:var(--textColor); margin: -5px auto 0; width: 200px; font-family: cinzel; font-size: 15px; background: var(--contrast); cursor: default;}
+.ANOcorpsmess_blocmess_linesup {display: flex;justify-content: space-between;background: var(--contrast);padding: 10px;border-bottom: 2px solid var(--neutralDark);color: var(--textColor);font-size: 11.5px;}
+.ANOcorpsmess_blocmess_mess { padding: 20px; text-align: justify;min-height: 518px;line-height: 1.2;}
+.ANOcorpsmess_blocmess { width: 100%;background:var(--neutral);}
+.ANOcorpsmess_blocmess_linesup_right.profile-icons a { font-variant: all-petite-caps; margin: 4px 4px 0px; font-size: 11.1px; letter-spacing: 0.2px; font-family: cinzel; padding: 3px; height: auto;color: var(--neutralDark);}
+.profile-icons a:hover, .profile-icons a.selected, .profile-icons span:hover, .profile-icons span.selected {color:var(--textColor);}
+.ANOcorpsmess_blocmess_linesup_left_modif { margin-top: -17px; letter-spacing: -0.3px; color: var(--neutral); height: 10px; font-size: 9px;}
+.ANOcorpsmess_blocmess_linesup_left_writmess { font-family: 'Cinzel';}
+.topic-actions.bottom .topic-actions-buttons{font-size:10px}
+.systab { margin-top: 8px;}
+.systab .contents {    color: var(--textColor);font-weight: bold;background: var(--contrast);padding: 8px;height: 120px;overflow: auto;opacity: .8;width: 200px;margin: 5px auto 0;}
+.label { font-weight: bold; font-family: 'Cinzel';}
+.ANOcorpsmess_blocavaong .infos-posteur { margin-bottom: 5px; border-bottom: 1px solid #0000001a; padding-bottom: 5px;font-size: 11px;text-align: left;font-weight: normal !important;}
+.systab .tab.selected {color: var(--contrastLighter);font-weight: bold;background: var(--contrast);padding-bottom: 4px;opacity: 1;}
+.systab .tab {padding: 4px 5px;padding-left: 20px;padding-right: 21px;color: var(--textColor);background: var(--neutralDarker);cursor: pointer;transition: .75s;font-size: 12px;font-family: 'cinzel', serif;letter-spacing: 1px;opacity: .6;}
+.ion-edit:before { content: url(https://zupimages.net/up/23/52/ordr.png); position: absolute; margin-left: -20px; margin-top: 1px;}
+.sub-header-buttons .ion-edit.button1, .topic-actions.bottom > .topic-actions-buttons > a { width: 180px!important; padding-left: 30px;}
+input[type="submit"], .button, .button1, .button2 { background-color: var(--contrast);color: #000 !important;padding: 10px;border-radius: 7px;}
+input[type="submit"]:hover, .button:hover, .button1:hover, .button2:hover { background-color: var(--contrastLighter); box-shadow: inset 0 1px 3px #4f4f4f;}h1.page-title { font-family: 'Cinzel';}.quick-nav-topics.bottom {margin: 0px 0 9px;}
+.ANOcorpsmess_blocmess_linesup_left_writmess a {color: white;}
+.ANOcorpsmess_ban_infos strong {font-weight: 100 !important;}
+.sceditor-button-usercode div,.sceditor-button-paroles div {background: url('https://i.servimg.com/u/f44/20/29/00/76/star10.png')!important;background-size: 16px 16px!important;}
+.sceditor-button-habillage div {background: url('https://i.ibb.co/XX3SrN1/fav-habillage.png')!important;background-size: 16px 16px!important;}
+.postbody{margin: auto;background:var(--neutral);}
+
+
+dl.codebox:before{display:none}
+.lienssubj div {background: var(--contrast);margin: 10px 5px;padding: 5px;border: 1px solid #f8d5da54;transition:.2s;color: var(--neutralDark);font-family: 'Cinzel';font-size: 13px;}
+.lienssubj div:hover {transition: .2s;background: var(--neutral);color: var(--contrast);}
+
+
+.resumepersonnagepost .resume-label {font-family: 'Cinzel';color: var(--contrastLighter);cursor: pointer;}
+.resumepersonnagepost {background: var(--contrast);margin: 10px 5px;padding: 5px;border: 1px solid var(--neutralDark)}
+.resume-content {margin-top: 15px;background: var(--neutral);padding: 5px;text-align: justify;}
+.resumepersonnagepost:empty {display: none;}
+
+
+.signature_div {text-align: center;}
+
+
+.infos-posteur ul {margin: 0;padding: 0;height: 0px;}
+
+
+.postbody .content {font-size: 12px;line-height: 16px;}
+.ANOcorpsmess_blocmess_mess .message-content {font-size: 12px;line-height: 16px;}
+
+
+.userProfile {background: var(--neutralDark);}
+.qyprofilmename {text-align: center;font-size: 50px;font-family: 'Fleur de Leah';color: #3d3d3d;padding: 20px 0px;}
+.qyprofile1{margin-bottom: 20px;box-shadow: 2px 2px 5px black;}
+.qyprofilmename strong {font-weight: 100;}
+.qyprofilelvl div {font-family: Cinzel;text-align: center;color: #393939;font-size: 30px;}
+.qyprofilelvl{width:90px}
+.niveauprofile {font-size: 20px !important;padding-bottom: 10px;}
+.qyprofile1 {opacity: 0.6;display: flex;width: 100%;justify-content: space-between;align-items: center;}
+.qyprofile {display: flex;min-height: 500px;}
+.qyprofile_c1 {width: 36%;font-size: 13px;}
+.qyprofile_c1_title {font-size: 30px;margin-right: 15px;font-family: "Ma Shan Zheng", cursive;float: left;margin-top: 110px;height: 100%;}
+.qyprofile_c1_title div { display: table-caption;background: linear-gradient(to top, var(--contrast),var(--neutral));-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+.profile_right_row {display: flex;margin: 10px 0px;}
+.profile_label {padding-right: 3px;font-weight: bold;color:var(--contrast);width: 140px;}
+.qyprofile_c2 {width: 27%;text-align: center;}
+.qyprofile_c3 {width: 36%;font-size: 13px;}
+#field_id1 {display: none;}
+#field_id-20, #field_id7 {display: block;}
+#field_id-20 .field_uneditable {background: var(--neutral);margin-left: 45px;padding: 10px;margin-top: 5px;height: 100px;overflow: auto;}
+.nbniveau {position: relative;transition:0.2s;width: 50px;height: 53px;background: #4e597a;line-height: 57.73px;color: #fff !important;opacity: 1;font-weight: 700;clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);margin: -8px auto 0 auto;}
+.nbniveau::before,.nbniveau::after {content: "";position: absolute;width: inherit;height: inherit;background-color: inherit;z-index: -1;}
+.nbniveau:hover {background-color: #f8d5da;color:#393939!important;transition: .2s;}
+.qyprofile_c2_ava img {border: 3px solid #f8d5da;margin-bottom: 10px;}
+.qyprofile_c3_messsubj a {background:var(--contrast);padding: 5px;color:var(--contrastLighter);font-style: italic;border: 1px solid #f8d5da2b;width: 100px;text-align: center;transition: .2s;}
+.qyprofile_c3_messsubj {display: flex;justify-content: space-around;}
+a[href*="/profile?mode=email"] {display: none!important;}
+.qyprofile_c3_contact a {background: var(--contrast);padding: 5px;color: var(--contrastLighter);font-style: italic; border: 1px solid #f8d5da2b;width: 230px;text-align: center;margin: auto;display: block;transition: .2s;}
+.qyprofile_c3_contact a:hover, .qyprofile_c3_messsubj a:hover {background: #444860;color: #f8d5da;transition: .2s;}
+.profile_contact_left {margin-top: 15px;margin-bottom: -13px;}
+.ALOprofile_middlebar_rank {font-family: Cinzel;background:  var(--contrast);padding: 5px;margin: 5px 25px;color: var(--contrastLighter);font-weight: bold;opacity:.6}
+div#field_id15 {margin-left: 45px;padding-top: 10px;margin-top: 0;}
+#field_id15 .profile_label {width: 80px;}
+.ALOprofile_middlebar_status {margin-bottom: 15px;font-size: 11px;}
+/* Bouton édition d'un champ de profil */
+.ajax-profil_edit {
+  cursor: pointer;
+  position: absolute;
+  margin-top:-15px
+}
+
+
+/* Bouton validation des modifications */
+.ajax-profil_valid {
+  cursor: pointer;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+
+.profile_data.ajax-profil_parent {
+    width: 160px;
+    font-size: 12px;
+}
+
+
+#field_id-20 .profile_data.ajax-profil_parent {
+    width: auto;
+}
+
+
+
+
+/********QEEL********/
+.qeel2024 {display: flex;background: var(--second-color);padding:10px;border-radius:10px}
+.qeel2024_bienvanniv { margin-right: 20px;width:370px}
+.qeel2024_bienvanniv_bienv { text-align: center; font-family: Cinzel; font-size: 18px;margin: 35px 0px 25px 70px;}
+#ib-last-user img { width: 65px; position: absolute; margin-top: -80px; margin-left: -193px; border: 6px solid var(--neutralDark)}
+.qeel2024_bienvanniv_anniv { text-align: justify; height: 62px; font-size: 11px; overflow: auto; margin: 9px 5px 5px 5px; background: var(--neutralDark); padding: 5px; line-height: 12px;outline: 2px solid var(--neutralDark);outline-offset: 2px;}
+.qeel2024_onlinecorec { width: 410px; text-align: justify; margin-right: 20px; font-size: 11px;}
+#current_members { text-align: center; margin-bottom: 10px;}
+#list_current_members {text-align: justify;height: 50px;overflow: auto;margin: 5px;background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;}
+div#current_members p2 { font-size: 10px;}
+list_current_members::before { content: "Sont actuellement parmi nous : ";}
+#lconnect { text-align: justify; height: 78px; overflow: auto; margin: 15px 5px 5px;background: var(--neutralDark); padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;width: 370px;}
+.qeel2024_stats_stats { display: flex; justify-content: space-around; margin: 5px 5px 10px 5px;font-size:11px}
+.qeel2024_stats { width: 180px;}
+ro#total_users_qeel::after { content: "↯"; margin-left: 10px;}
+.qeel2024_stats_grpes div { width: 180px; margin: 4px auto; text-align: center; color: white; border-radius: 3px;transition: .5s;}
+.qeel2024_stats_grpes div:hover { transition: .5s; background-color:var(--contrast) !important; color: #fff;}
+.qeel2024_stats_grpes {line-height: 1.3;font-size: 12px;}
+.qeel2024_stats_grpes .gpnj {color: black;}
+.qeel2025_credits {background: var(--neutralDark);padding: 5px;outline: 2px solid var(--neutralDark);outline-offset: 2px;margin: 0 15px;font-size: 10px;opacity: 0.7;text-align:justify}
+
+
+/*** ------------------------------- ***/
+/*** SWITCHEROO - Par Monomer ------ ***/
+/*** Gestionnaire de multicompte --- ***/
+
+
+:root {
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.43, 0.09, 0.38, 2.56);
+}
+
+
+/* BARRE SWITCHEROO --- */
+/* BARRE --- */
+.switcheroo {
+  color: var(--textColor);
+}
+
+
+/* Positionnement des ronds */
+.switcheroo__squircles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 15px;
+}
+
+
+/* AFFICHAGE DES COMPTES ---*/
+
+
+/* Rond */
+.switcheroo__squircle {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: var(--neutralDark);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: 5px solid transparent;
+  transition: border-radius 128ms var(--ease);
+}
+
+
+/* Rond au survol */
+.switcheroo__squircle:hover {
+  outline-color: var(--neutralDarker);
+  border-radius: 8px;
+}
+
+
+.switcheroo__squircle:hover img {
+  border-radius: 8px;
+}
+
+
+/* Conteneur de l'avatar */
+.switcheroo__avatar {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+
+/* Image de l'avatar */
+.switcheroo__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  transition: border-radius 128ms var(--ease);
+  position: relative;
+}
+
+
+/* Avatar du compte connecté */
+.switcheroo__squircle.active,
+.switcheroo__squircle.active img {
+  outline-color: var(--neutralDark);
+  cursor: default;
+}
+
+
+/* AJOUTER UN COMPTE ---*/
+/* Bouton : ajouter un compte */
+.switcheroo__squircle--button {
+  transition: border-radius 128ms var(--ease);
+  color: var(--contrastLight);
+}
+
+
+/* Icône plus */
+.switcheroo__squircle--button i {
+  font-size: 19px;
+}
+
+
+.switcheroo__squircle--button:hover {
+  color: var(--accentClr);
+}
+
+
+/* Bouton de suppression */
+.switcheroo__delete {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -7px;
+  right: -7px;
+  border-radius: 50%;
+  background-color: var(--accentClr);
+  transform: scale(0);
+  opacity: 1;
+  transition: transform 128ms var(--ease), opacity 64ms var(--ease);
+  cursor: pointer;
+  color: var(--neutral);
+  line-height: 0;
+}
+
+
+.switcheroo__squircle:hover .switcheroo__delete {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* TOOLTIP - INFOBULLE DU PSEUDO ---*/
+
+
+/* Conteneur du pseudo */
+.switcheroo__popper {
+  background-color: var(--neutralDarker);
+  padding: 0.3rem 1rem;
+  position: absolute;
+  width: max-content;
+  border-radius: 5px;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 64ms var(--ease), transform 128ms var(--ease-bounce);
+  pointer-events: none;
+  color: var(--textColor);
+  left: 155%;
+  top: 50%;
+  transform-origin: left;
+  transform: translateY(-50%) scale(0.98);
+}
+
+
+/* Flèche tooltip */
+.switcheroo__popper:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--neutralDarker);
+  z-index: -1;
+  left: -3px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  border-radius: 2px;
+}
+
+
+.switcheroo__squircle:hover .switcheroo__popper {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+
+/* LOGO --- retirez display:none pour retrouver le logo */
+.switcheroo__logo,
+.switcheroo__divider {
+  display: none;
+}
+
+
+/* MODAL : FENETRE DE CONNEXION --- */
+
+
+/* Fond de l'affichage de connexion */
+.monomer-overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s opacity ease;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+
+/* Boîte de connexion */
+.monomer-modal {
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  width: 94%;
+  padding: 30px;
+  transition: 0.2s opacity ease;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background: var(--neutral);
+  padding: 50px;
+  box-shadow: var(--shadowBox);
+}
+
+
+/* Champs à remplir */
+.switcheroo__form-row {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+
+/* Nom du champ */
+.switcheroo__form-label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+/* Zone de texte */
+.switcheroo__form-input {
+  padding: 6px !important;
+  border-radius: 4px;
+  width: 100%;
+  background-color: var(--neutral);
+  color: var(--contrastLight);
+  cursor: text;
+}
+
+
+/* Bouton de connexion */
+.switcheroo__form-button {
+  border-radius: 8px;
+  padding: 4px 10px 5px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  align-self: center;
+  background-color: var(--accentClr);
+  cursor: pointer;
+  color: var(--neutral);
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
+.switcheroo__form-button:hover {
+  background: var(--contrastLight);
+}
+
+
+.monomer-modal.monomer-open,
+.monomer-overlay.monomer-open {
+  opacity: 1;
+}
+
+
+/* Fermer la boîte de connexion */
+.monomer-close {
+  font-size: 16px;
+  line-height: 12px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: var(--textColor);
+  border: 0;
+  outline: none;
+  background: var(--contrastLighter);
+  border-radius: 4px;
+  padding: 0;
+  padding-left: 1px;
+}
+
+
+.monomer-close:hover {
+  background: var(--contrastLight);
+}
