@@ -855,7 +855,7 @@ form[name="form_login"] .content {
 
 
 /***************************CARTE***************************/
-.mapchina {text-align: center;width: 980px;height: 822px;background-image: url(https://i.postimg.cc/CLTNpn3C/Carte.png);background-size: 100% 822px;background-repeat: no-repeat;position: relative;place-self: center;}
+.mapchina {text-align: center;width: 980px;height: 822px;background-image: url(https://i81.servimg.com/u/f81/17/65/68/70/carte10.png);background-size: 100% 822px;background-repeat: no-repeat;position: relative;place-self: center;}
 .mapcity:before {content: "♦ ";font-size: 15px;}
 .baihe {right: 240px;top: 330px;position: absolute;}
 .tiecheng {right: 340px;top: 400px;position: absolute;}
