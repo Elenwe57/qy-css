@@ -1610,6 +1610,7 @@ ro#total_users_qeel::after { content: "↯"; margin-left: 10px;}
 
 .monomer-close:hover {
   background: var(--contrastLight);
+}
 
     /****************************************PERSONA******************************************/
 
@@ -2027,4 +2028,3 @@ height: 16px !important;
     font-size: 11px!important;
 }
 
-}
