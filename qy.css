@@ -1175,7 +1175,7 @@ font-size: 10px;
 
 /*******************MESSAGES*******************/
 .ANOcorpsmess { width: 100%; margin: auto; margin-bottom: 15px; border: 1px solid var(--fourth-color); box-shadow: -2px 5px 5px 0px #0000006e;border: 1px solid #c27b7b0f;}
-.ANOcorpsmess_ban {background: url(https://i.postimg.cc/sfJZ2n12/Banni-re-message.png); height: 150px; width: 100%; background-size: cover; border-bottom: 2px solid var(--neutralDark);border-top-left-radius: 8px; border-top-right-radius: 8px;}
+.ANOcorpsmess_ban {background: url(https://i81.servimg.com/u/f81/17/65/68/70/banniz13.png); height: 150px; width: 100%; background-size: cover; border-bottom: 2px solid var(--neutralDark);border-top-left-radius: 8px; border-top-right-radius: 8px;}
 .ANOcorpsmess_int { display: flex;background: #2a242e;}
 .ANOcorpsmess_blocavaong { width: 220px; border-right:2px solid var(--accentClr); text-align: center;background:var(--neutralDark);}
 .ANOcorpsmess_blocavaong_ava { width: 210px; padding: 5px;background:var(--neutralDark);margin: 5px auto 0;}
