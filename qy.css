@@ -1610,4 +1610,421 @@ ro#total_users_qeel::after { content: "↯"; margin-left: 10px;}
 
 .monomer-close:hover {
   background: var(--contrastLight);
+
+    /****************************************PERSONA******************************************/
+
+
+.persona:not(.loaded) {
+  --gradient: var(--neutralDarker);
+  word-break: break-word;
+  min-height: 800px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  color: transparent !important;
+}
+
+
+.persona:not(.loaded)::after {
+  position: absolute;
+  inset: 0;
+  opacity: 0.3;
+  transform: translateX(-100%);
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, var(--gradient) 25%, rgba(255, 255, 255, 0) 50%);
+  animation: shimmer 2s infinite;
+  content: "";
+}
+
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+.ficheBloc {
+  border-radius: 10px;
+  background: var(--neutralDark);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+.ficheBloc_head {
+  margin: 15px 0 20px;
+  text-align: center;
+  line-height: 15px;
+}
+
+
+.ficheBloc_head_title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.ficheBloc_head_subtitle {
+  font-style: italic;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+
+.fiche_presentation {
+  display: grid;
+  grid-template-columns: auto max-content;
+  gap: 5px;
+}
+
+
+.fiche_presentation_content {
+  background: var(--neutral);
+  padding: 15px;
+  border-radius: 5px;
+  text-align: justify;
+  height: 320px;
+  overflow: auto;
+}
+
+
+.fiche_presentation_content br:nth-child(n+2) {
+  display: initial;
+}
+
+
+.fiche_avatar img {
+  width: 200px;
+  height: 320px;
+  object-fit: cover;
+}
+
+
+.fiche_anecdotes {
+  background: var(--neutral);
+  padding: 15px;
+  text-align: justify;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+
+.fiche label {
+  display: inline;
+  margin-right: 5px;
+  font-size: 11px;
+  color: var(--accentClr);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+
+.fiche_joueur {
+  border-radius: 10px;
+  border: var(--border);
+  padding: 15px;
+}
+
+
+.personaForm {
+  display: none;
+}
+
+
+.personaForm fieldset,
+.personaForm legend {
+  all: unset;
+  box-sizing: border-box;
+}
+
+
+.personaForm fieldset {
+  display: block;
+  margin: 25px 0;
+  position: relative;
+  border-top: var(--border);
+  padding-top: 40px;
+}
+
+
+.personaForm legend {
+  display: block;
+  margin-top: 15px;
+color: var(--contrast);
+    font-family: Cinzel;
+    font-size: 25px;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+.personaForm .field {
+  margin: 10px 0;
+  padding-left: 235px;
+}
+
+
+.personaForm .field label {
+  font-weight: 700;
+font-size: 14px;
+}
+
+
+.personaForm .field .description {
+  font-style: italic;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+
+.personaForm .field.columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 15px;
+}
+
+
+.personaForm .field.columns .field {
+  padding: 0;
+}
+
+
+.personaForm textarea,
+.personaForm select,
+.personaForm input[type="text"] {
+  margin: 5px 0;
+  background-color: var(--neutralDark);
+  font-family: var(--font);
+  width: 100%;
+}
+
+
+.personaForm textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+
+.personaForm :focus:is(textarea, select, input[type="text"]) {
+  outline: 1px solid var(--accentClr);
+}
+
+
+.personaForm .input-error,
+.personaForm .input-error:focus {
+  outline: 2px solid darkred;
+}
+
+
+.personaForm .input-error-message {
+  color: darkred;
+}
+
+
+.image-preview {
+  position: relative;
+  border-radius: 5px;
+}
+
+
+.image-preview::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
+  background: var(--contrastLight);
+  opacity: 0.2;
+}
+
+
+.image-preview:has(img)::after {
+  display: none;
+}
+
+
+.image-preview > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.image-preview.avatar {
+    width: 160px;
+    height: 251px;
+    margin-top: -13px;
+    margin-bottom: 5px;
+}
+
+
+.choice-input {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 5px;
+}
+
+
+.choice-input > input {
+  display: none;
+}
+
+
+label.choice {
+  position: relative;
+  background-color: var(--neutralDark);
+  border-radius: 5px;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+
+input[type="radio"]:checked + label.choice {
+  border: 1px solid var(--accentClr);
+  color: var(--accentClr);
+}
+
+
+.addField {
+  background-color: var(--neutralDarker);
+  border-radius: 20px;
+  font-weight: 600;
+  padding: 5px 10px 5px 5px;
+    margin: 10px 0 10px 670px;
+}
+
+
+.addField > i {
+  background: var(--accentClr);
+  border-radius: 20px;
+  width: 18px;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+
+.addField:hover {
+  background-color: var(--accentClr);
+  color: var(--contrast);
+}
+
+
+.persona-toolbar {
+  border-radius: 5px;
+  background-color: var(--neutralDark);
+  position: relative;
+  padding: 5px;
+}
+
+
+.persona-options-button:hover {
+  background-color: var(--accentClr);
+}
+
+
+.persona-code-parameters {
+  display: none;
+  position: relative;
+  background: var(--neutralDark);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.persona-code-parameters.open {
+  display: block;
+}
+
+
+.persona-code-parameters .copy-button {
+  position: absolute;
+  right: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: monospace;
+  background: none;
+  padding: 0;
+}
+
+
+.apparencefield {display: flex;margin-top: 15px;}
+.apparencedeuxcol{margin-left:-120px;width: 100%;}
+.personaForm textarea {min-height: 36px;border: none;text-align:justify;padding: 10px;}
+.personaForm input {margin-left: 15px;background: var(--neutralDark);min-height: 33px;}
+.field.dicepersona {display: flex;}
+
+
+.pointsrestants {
+    position: absolute;
+    margin-left: 10px !important;
+    margin-top: -130px !important;
+    text-align: center;
+    background: var(--neutralDark);
+    border: 1px solid var(--neutralDark);
+    padding: 10px !important;
+}
+
+
+button.roll-dice:hover {
+    background: var(--neutralDark);
+    transition: .2s;
+}
+button.roll-dice {
+    background: var(--contrast);
+    transition: .2s;
+}
+
+
+#equation-points-restants {
+    display: none;
+}
+
+
+.image .field {
+    padding: 0;
+    width: 457px;
+}
+
+
+.image {
+    display: flex;
+    gap: 25px;
+}
+
+
+.liengif {
+    width: 150px;
+    height: 150px;
+    margin: 40px 0 0 20px;
+}
+
+
+textarea.naissance {
+    min-height: 77px;
+}
+
+
+.statsarme {
+    margin: 10px 0 0 40px;
+    font-size: 12px;
+    border-left: 1px solid var(--contrast);
+    padding-left: 10px;
+column-count: 2;
+}
+
+
+input.ptarmestats {
+    min-height: 16px !important;
+height: 16px !important;
+    margin-bottom: 5px!important;
+    font-size: 11px!important;
+}
+
 }
